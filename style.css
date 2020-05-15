@@ -28,8 +28,6 @@ body {
     background-color: black;
 }
 
-
-
 h1 {
     margin: 5px;
     padding: 5px;
@@ -193,6 +191,7 @@ Content styles
     background-size: cover;
     max-height: 500px;
     overflow-y: auto;
+    text-align: center;
 }
 
 .form-wrapper fieldset label,
@@ -416,7 +415,6 @@ button:hover {
     height: 70px;
 }
 
--------------------------------------
 /*Footer styles*/
 
 .footer-wrapper {
