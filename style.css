@@ -188,7 +188,6 @@ Content styles
     font-size: 1.5rem;
     background: url("images/transparent.jpg") no-repeat;
     background-size: cover;
-    max-height: 500px;
     overflow-y: auto;
     text-align: center;
 }
