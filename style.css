@@ -363,7 +363,6 @@ button:hover {
 }
 
 .dice-value {
-    display: inline-block;
     vertical-align: middle;
 }
 
