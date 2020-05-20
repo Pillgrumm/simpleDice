@@ -426,6 +426,10 @@ i {
     display: none !important;
 }
 
+.fa-3x {
+    font-size: 40px;
+}
+
 /* -------------------------------------
 Responsive styles
 */
