@@ -1,2 +1,2 @@
 # simpleDice
- Simple App For DnD Dice.
+ Simple App For DnD Dice, use it as you wish!
