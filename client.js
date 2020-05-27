@@ -85,4 +85,3 @@ $("#reset").on("click", function () {
     $("#d12-value").empty();
     $("#d20-value").empty();
 });
-//let htmlImageOutput = "<img src='images/dice/dice-" + diceNumber + ".png' class='dice-image'>";
