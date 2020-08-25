@@ -9,6 +9,7 @@ $("#d20").on("click", function () {
     d20.dice.value = 1 + Math.floor(Math.random() * 20);
     $("#d20-value").empty();
     $("#d20-value").append("You rolled: " + d20.dice.value + " ");
+    console.log(d20.dice.value);
 });
 
 
