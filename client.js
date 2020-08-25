@@ -62,6 +62,7 @@ $("#d6").on("click", function () {
     d6.dice.value = 1 + Math.floor(Math.random() * 6);
     $("#d6-value").empty();
     $("#d6-value").append("You rolled: " + d6.dice.value + " ");
+    console.log(d6.dice.value);
 });
 
 // d4 dice
@@ -75,6 +76,7 @@ $("#d4").on("click", function () {
     d4.dice.value = 1 + Math.floor(Math.random() * 4);
     $("#d4-value").empty();
     $("#d4-value").append("You rolled: " + d4.dice.value + " ");
+    console.log(d4.dice.value);
 });
 
 $("#reset").on("click", function () {
