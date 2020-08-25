@@ -36,6 +36,7 @@ $("#d10").on("click", function () {
     d10.dice.value = 1 + Math.floor(Math.random() * 10);
     $("#d10-value").empty();
     $("#d10-value").append("You rolled: " + d10.dice.value + " ");
+    console.log(d10.dice.value);
 });
 
 //d8 dice
