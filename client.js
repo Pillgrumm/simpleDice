@@ -23,6 +23,7 @@ $("#d12").on("click", function () {
     d12.dice.value = 1 + Math.floor(Math.random() * 12);
     $("#d12-value").empty();
     $("#d12-value").append("You rolled: " + d12.dice.value + " ");
+    console.log(d12.dice.value);
 });
 
 //d10 dice
