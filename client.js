@@ -63,6 +63,7 @@ $("#d6").on("click", function () {
     $("#d6-value").empty();
     $("#d6-value").append("You rolled: " + d6.dice.value + " ");
 });
+console.log(d6)
 
 // d4 dice
 var d4 = {
