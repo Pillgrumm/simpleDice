@@ -3,121 +3,50 @@ var totalSum = 0;
 
 // Function to update the displayed total
 function updateTotal() {
-    $("#diceSum").empty();
-    $("#diceSum").append("Total sum: " + totalSum);
+    $("#diceSum").text("Total sum: " + totalSum);
+}
+
+// Generic dice roll function
+function rollDice(sides, elementId) {
+    var value = 1 + Math.floor(Math.random() * sides);
+    $(elementId).text("You rolled: " + value + " ");
+    totalSum += value;
+    updateTotal();
 }
 
 // d20 dice
-var d20 = {
-    dice: roll = {
-        value: 0,
-    }
-}
-
 $("#d20").on("click", function () {
-    d20.dice.value = 1 + Math.floor(Math.random() * 20);
-    $("#d20-value").empty();
-    $("#d20-value").append("You rolled: " + d20.dice.value + " ");
-    console.log(d20.dice.value);
-    
-    totalSum += d20.dice.value;
-    updateTotal();
+    rollDice(20, "#d20-value");
 });
 
 // d12 dice
-var d12 = {
-    dice: roll = {
-        value: 0,
-    }
-}
-
 $("#d12").on("click", function () {
-    d12.dice.value = 1 + Math.floor(Math.random() * 12);
-    $("#d12-value").empty();
-    $("#d12-value").append("You rolled: " + d12.dice.value + " ");
-    console.log(d12.dice.value);
-    
-    totalSum += d12.dice.value;
-    updateTotal();
+    rollDice(12, "#d12-value");
 });
 
 // d10 dice
-var d10 = {
-    dice: roll = {
-        value: 0,
-    }
-}
-
 $("#d10").on("click", function () {
-    d10.dice.value = 1 + Math.floor(Math.random() * 10);
-    $("#d10-value").empty();
-    $("#d10-value").append("You rolled: " + d10.dice.value + " ");
-    console.log(d10.dice.value);
-    
-    totalSum += d10.dice.value;
-    updateTotal();
+    rollDice(10, "#d10-value");
 });
 
 // d8 dice
-var d8 = {
-    dice: roll = {
-        value: 0,
-    }
-}
-
 $("#d8").on("click", function () {
-    d8.dice.value = 1 + Math.floor(Math.random() * 8);
-    $("#d8-value").empty();
-    $("#d8-value").append("You rolled: " + d8.dice.value + " ");
-    console.log(d8.dice.value);
-    
-    totalSum += d8.dice.value;
-    updateTotal();
+    rollDice(8, "#d8-value");
 });
 
 // d6 dice
-var d6 = {
-    dice: roll = {
-        value: 0,
-    }
-}
-
 $("#d6").on("click", function () {
-    d6.dice.value = 1 + Math.floor(Math.random() * 6);
-    $("#d6-value").empty();
-    $("#d6-value").append("You rolled: " + d6.dice.value + " ");
-    console.log(d6.dice.value);
-    
-    totalSum += d6.dice.value;
-    updateTotal();
+    rollDice(6, "#d6-value");
 });
 
 // d4 dice
-var d4 = {
-    dice: roll = {
-        value: 0,
-    }
-}
-
 $("#d4").on("click", function () {
-    d4.dice.value = 1 + Math.floor(Math.random() * 4);
-    $("#d4-value").empty();
-    $("#d4-value").append("You rolled: " + d4.dice.value + " ");
-    console.log(d4.dice.value);
-    
-    totalSum += d4.dice.value;
-    updateTotal();
+    rollDice(4, "#d4-value");
 });
 
 // Reset button
 $("#reset").on("click", function () {
-    $("#d4-value").empty();
-    $("#d6-value").empty();
-    $("#d8-value").empty();
-    $("#d10-value").empty();
-    $("#d12-value").empty();
-    $("#d20-value").empty();
-    
+    $(".dice-value").empty();
     // Reset total sum and update the display
     totalSum = 0;
     updateTotal();
