@@ -3,9 +3,7 @@
     padding: 0;
     border: 0;
     font-size: 100%;
-    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
     box-sizing: border-box;
-    /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
     -webkit-margin-start: 0px;
@@ -65,7 +63,6 @@ input[type='radio'] {
     z-index: 1;
 }
 
-
 .dice-icon {
     padding-top: 10px;
 }
@@ -117,8 +114,6 @@ Header styles
     width: 100%;
     margin: 0;
     display: block;
-    /*    background: url('./images/landing-background.jpg') no-repeat center center;
-    */
     background-attachment: fixed;
     position: relative;
     background-size: cover;
@@ -162,7 +157,6 @@ Content styles
     text-align: center;
     margin: 2rem auto;
     width: auto;
-
 }
 
 .form-wrapper {
@@ -170,7 +164,6 @@ Content styles
     width: 33.33%;
     margin: 2rem auto;
     float: left;
-    /*    overflow-y: scroll;*/
 }
 
 .form-wrapper .input-wrapper {
@@ -327,7 +320,6 @@ p {
 
 button:hover {
     color: #ffffff !important;
-    /*    background: #f6b93b;*/
     border-color: white !important;
     transition: all 0.4s ease 0s;
 }
@@ -344,7 +336,6 @@ button:hover {
     height: 47px;
     width: 20%;
     min-width: 50px;
-
 }
 
 #form-submit-button {
@@ -353,7 +344,6 @@ button:hover {
 
 #form-delete-button {
     float: right;
-
 }
 
 .dice-value {
@@ -363,7 +353,6 @@ button:hover {
 .dice-button {
     background-color: transparent;
     vertical-align: middle;
-
 }
 
 .dice-image {
@@ -390,7 +379,6 @@ button:hover {
     width: 49%;
     display: inline-block;
     vertical-align: top;
-
 }
 
 #full-form {
@@ -435,14 +423,9 @@ Responsive styles
 */
 input[type="date"] {
     display: block;
-
-    /* Solution 1 */
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     min-height: 1.2em;
-
-    /* Solution 2 */
-    /* min-width: 96%; */
 }
 
 /*ipad lanscape / small laptop*/
@@ -452,7 +435,6 @@ input[type="date"] {
         color: blue;
     }
 }
-
 
 /*ipad potrait*/
 
@@ -491,7 +473,6 @@ input[type="date"] {
     }
 }
 
-
 /*iPhone landscape*/
 
 @media only screen and (max-width: 480px) {
@@ -500,11 +481,24 @@ input[type="date"] {
     }
 }
 
-
 /*iPhone portrait*/
 
 @media only screen and (max-width: 320px) {
     body {
         color: purple;
     }
+}
+
+/* Style for the Total Sum */
+#diceSum {
+    margin-top: 2rem; /* Increase the space above the Total Sum */
+    margin-bottom: 2rem; /* Increase the space below the Total Sum */
+    font-size: 1.5rem; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    color: white; /* Change the text color */
+    background-color: #333; /* Add a background color for contrast */
+    padding: 1rem; /* Add some padding around the text */
+    border-radius: 5px; /* Rounded corners for a nicer look */
+    border: 2px solid #444; /* Border to make it stand out */
+    text-align: center; /* Center the text */
 }

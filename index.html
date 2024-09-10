@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Simple Dice</title>
@@ -7,66 +9,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-                    <div class="dice-wrapper">
-                        <h1>Dice</h1>
-                        <section role="region" class="section-content">
-                            <div class="input-wrapper">
-                                <button id="d20" class="dice-button">
-                                    <img src="images/dice/dice-20.png" alt="" class="dice-image">
-                                </button>
-                                <div id="d20-value" class="dice-value"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <button id="d12" class="dice-button">
-                                    <img src="images/dice/dice-12.png" alt="" class="dice-image">
-                                </button>
-                                <div id="d12-value" class="dice-value"></div>                                
-                            </div>
-                            <div class="input-wrapper">
-                                <button id="d10" class="dice-button">
-                                    <img src="images/dice/dice-10.png" alt="" class="dice-image">
-                                </button>
-                                <div id="d10-value" class="dice-value"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <button id="d8" class="dice-button">
-                                    <img src="images/dice/dice-8.png" alt="" class="dice-image">
-                                </button>
-                                <div id="d8-value" class="dice-value"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <button id="d6" class="dice-button">
-                                    <img src="images/dice/dice-6.png" alt="" class="dice-image">
-                                </button>
-                                <div id="d6-value" class="dice-value"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <button id="d4" class="dice-button">
-                                    <img src="images/dice/dice-4.png" alt="" class="dice-image">
-                                </button>
-                                <div id="d4-value" class="dice-value"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <div id="diceSum"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <button id="reset" class="dice-button character-name-button">
-                                    Reset
-                                </button>
-                                </div>
-                                <footer class="footer">
-                                    <div class="footer-wrapper">
-                                        <a class="footer-icon" href="https://github.com/Pillgrumm" target="_blank">
-                                            <i class="fab fa-github fa-3x" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="footer-icon" href="mailto:nick22793@hotmail.com?Subject=Hello" target="_blank">
-                                            <i class="far fa-envelope fa-3x" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="footer-icon" href="https://www.linkedin.com/in/nik-valenzuela/" target="_blank">
-                                            <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="client.js"></script>
-                              </body>
+    <div class="dice-wrapper">
+        <h1>Dice</h1>
+        <section role="region" class="section-content">
+            <div class="input-wrapper">
+                <button id="d20" class="dice-button">
+                    <img src="images/dice/dice-20.png" alt="" class="dice-image">
+                </button>
+                <div id="d20-value" class="dice-value"></div>
+            </div>
+            <div class="input-wrapper">
+                <button id="d12" class="dice-button">
+                    <img src="images/dice/dice-12.png" alt="" class="dice-image">
+                </button>
+                <div id="d12-value" class="dice-value"></div>                                
+            </div>
+            <div class="input-wrapper">
+                <button id="d10" class="dice-button">
+                    <img src="images/dice/dice-10.png" alt="" class="dice-image">
+                </button>
+                <div id="d10-value" class="dice-value"></div>
+            </div>
+            <div class="input-wrapper">
+                <button id="d8" class="dice-button">
+                    <img src="images/dice/dice-8.png" alt="" class="dice-image">
+                </button>
+                <div id="d8-value" class="dice-value"></div>
+            </div>
+            <div class="input-wrapper">
+                <button id="d6" class="dice-button">
+                    <img src="images/dice/dice-6.png" alt="" class="dice-image">
+                </button>
+                <div id="d6-value" class="dice-value"></div>
+            </div>
+            <div class="input-wrapper">
+                <button id="d4" class="dice-button">
+                    <img src="images/dice/dice-4.png" alt="" class="dice-image">
+                </button>
+                <div id="d4-value" class="dice-value"></div>
+            </div>
+            <div class="input-wrapper">
+                <div id="diceSum" class="total-sum">Total sum: 0</div>
+            </div>
+            <div class="input-wrapper">
+                <button id="reset" class="dice-button character-name-button">
+                    Reset
+                </button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <a class="footer-icon" href="https://github.com/Pillgrumm" target="_blank">
+                    <i class="fab fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+                <a class="footer-icon" href="mailto:nick22793@hotmail.com?Subject=Hello" target="_blank">
+                    <i class="far fa-envelope fa-3x" aria-hidden="true"></i>
+                </a>
+                <a class="footer-icon" href="https://www.linkedin.com/in/nik-valenzuela/" target="_blank">
+                    <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="client.js"></script>
+    </body>
+</html>
