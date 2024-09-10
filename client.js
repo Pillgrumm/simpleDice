@@ -1,4 +1,13 @@
-//d20 dice
+// Initialize total sum
+var totalSum = 0;
+
+// Function to update the displayed total
+function updateTotal() {
+    $("#diceSum").empty();
+    $("#diceSum").append("Total sum: " + totalSum);
+}
+
+// d20 dice
 var d20 = {
     dice: roll = {
         value: 0,
@@ -10,10 +19,12 @@ $("#d20").on("click", function () {
     $("#d20-value").empty();
     $("#d20-value").append("You rolled: " + d20.dice.value + " ");
     console.log(d20.dice.value);
+    
+    totalSum += d20.dice.value;
+    updateTotal();
 });
 
-
-//d12 dice
+// d12 dice
 var d12 = {
     dice: roll = {
         value: 0,
@@ -25,9 +36,12 @@ $("#d12").on("click", function () {
     $("#d12-value").empty();
     $("#d12-value").append("You rolled: " + d12.dice.value + " ");
     console.log(d12.dice.value);
+    
+    totalSum += d12.dice.value;
+    updateTotal();
 });
 
-//d10 dice
+// d10 dice
 var d10 = {
     dice: roll = {
         value: 0,
@@ -39,9 +53,12 @@ $("#d10").on("click", function () {
     $("#d10-value").empty();
     $("#d10-value").append("You rolled: " + d10.dice.value + " ");
     console.log(d10.dice.value);
+    
+    totalSum += d10.dice.value;
+    updateTotal();
 });
 
-//d8 dice
+// d8 dice
 var d8 = {
     dice: roll = {
         value: 0,
@@ -53,6 +70,9 @@ $("#d8").on("click", function () {
     $("#d8-value").empty();
     $("#d8-value").append("You rolled: " + d8.dice.value + " ");
     console.log(d8.dice.value);
+    
+    totalSum += d8.dice.value;
+    updateTotal();
 });
 
 // d6 dice
@@ -67,6 +87,9 @@ $("#d6").on("click", function () {
     $("#d6-value").empty();
     $("#d6-value").append("You rolled: " + d6.dice.value + " ");
     console.log(d6.dice.value);
+    
+    totalSum += d6.dice.value;
+    updateTotal();
 });
 
 // d4 dice
@@ -81,8 +104,12 @@ $("#d4").on("click", function () {
     $("#d4-value").empty();
     $("#d4-value").append("You rolled: " + d4.dice.value + " ");
     console.log(d4.dice.value);
+    
+    totalSum += d4.dice.value;
+    updateTotal();
 });
 
+// Reset button
 $("#reset").on("click", function () {
     $("#d4-value").empty();
     $("#d6-value").empty();
@@ -90,4 +117,8 @@ $("#reset").on("click", function () {
     $("#d10-value").empty();
     $("#d12-value").empty();
     $("#d20-value").empty();
+    
+    // Reset total sum and update the display
+    totalSum = 0;
+    updateTotal();
 });
