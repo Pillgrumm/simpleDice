@@ -99,7 +99,15 @@ $("#reset").on("click", function () {
     $("#d10-value").empty();
     $("#d12-value").empty();
     $("#d20-value").empty();
-    
+
+    // Reset the input values to 1
+    $("#d4-quantity").val(1);
+    $("#d6-quantity").val(1);
+    $("#d8-quantity").val(1);
+    $("#d10-quantity").val(1);
+    $("#d12-quantity").val(1);
+    $("#d20-quantity").val(1);
+
     // Reset total sum and update the display
     totalSum = 0;
     updateTotal();
