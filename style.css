@@ -74,6 +74,15 @@ input[type='radio'] {
     margin-right: auto;
 }
 
+/* Style for dice quantity input */
+.dice-quantity {
+    width: 60px; /* Set a specific width */
+    height: 30px; /* Adjust the height */
+    font-size: 1rem; /* Adjust the font size */
+    text-align: center; /* Center the text */
+    padding: 0.2rem; /* Adjust padding as needed */
+}
+
 /* -------------------------------------
 Header styles
 */
